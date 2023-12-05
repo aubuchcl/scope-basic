@@ -1,0 +1,12 @@
+{
+  "host": "demo.dec.chrisaubuchon.com",
+  "user-agent": "Go-http-client/2.0",
+  "accept-encoding": "gzip",
+  "x-cycle-container-id": "656f605fee3658ffb217831f",
+  "x-cycle-environment-id": "656f6036fd12df1bb2a8a86d",
+  "x-cycle-instance-id": "656f605fee3658ffb2178327",
+  "x-forwarded-for": "2001:19f0:5c00:11eb:5400:4ff:fe85:5277",
+  "x-forwarded-port": "443",
+  "x-forwarded-proto": "https",
+  "x-forwarded-protocol": "HTTP/2.0"
+}
