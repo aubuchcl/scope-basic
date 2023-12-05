@@ -1,5 +1,25 @@
 {
   "version": "1.0",
+  "scoped_variables": [
+    {
+      "identifier": "stackone",
+      "scope": {
+        "containers": {
+          "global": true
+        }
+      },
+      "access": {
+        "env_variable": true,
+        "internal_api": {},
+        "file": {}
+      },
+      "source": {
+        "type": "raw",
+        "details": "VALUEONE"
+      }
+    }
+  ],
+
   "containers": {
     "demo": {
       "name": "demo",
