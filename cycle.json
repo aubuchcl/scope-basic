@@ -15,7 +15,11 @@
       },
       "source": {
         "type": "raw",
-        "details": "VALUEONE"
+        "details": {
+          "value": "STACKONEVALUE",
+          "secret": null,
+          "blob": false
+        }
       }
     }
   ],
