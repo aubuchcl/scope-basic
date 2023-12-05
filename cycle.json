@@ -28,22 +28,22 @@
         "containers": {
           "global": false,
           "identifiers": ["demo"]
+        }
+      },
+      "access": {
+        "env_variable": true,
+        "internal_api": {
+          "duration": "15m"
         },
-        "access": {
-          "env_variable": true,
-          "internal_api": {
-            "duration": "15m"
-          },
-          "file": {
-            "path": "/root",
-            "decode": false
-          }
-        },
-        "source": {
-          "type": "url",
-          "details": {
-            "url": "https://demo.dec.chrisaubuchon.com/config"
-          }
+        "file": {
+          "path": "/root",
+          "decode": false
+        }
+      },
+      "source": {
+        "type": "url",
+        "details": {
+          "url": "https://demo.dec.chrisaubuchon.com/config"
         }
       }
     }
