@@ -59,7 +59,7 @@
           "duration": "15m"
         },
         "file": {
-          "path": "/root",
+          "path": "/root/urltype.json",
           "decode": false
         }
       },
