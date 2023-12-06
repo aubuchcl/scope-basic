@@ -50,8 +50,7 @@
       "identifier": "urltype",
       "scope": {
         "containers": {
-          "global": false,
-          "identifiers": ["demo"]
+          "global": true
         }
       },
       "access": {
