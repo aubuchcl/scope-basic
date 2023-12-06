@@ -67,7 +67,9 @@
       "source": {
         "type": "url",
         "details": {
-          "url": "https://demo.dec.chrisaubuchon.com/config"
+          "url": "https://demo.dec.chrisaubuchon.com/config",
+          "headers": { "X-Custom-Test-Header": "SOMEVALUE" },
+          "auth_token_url": "https://demo.dec.chrisaubuchon.com/auth"
         }
       }
     }
