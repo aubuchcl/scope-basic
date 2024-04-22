@@ -10,14 +10,14 @@
       },
       "access": {
         "env_variable": {
-          "key": "stackone"
+          "key": "stackoneupdated"
           
         }
       },
       "source": {
         "type": "raw",
         "details": {
-          "value": "STACKONEVALUE",
+          "value": "STACKONEVALUEUPDATED",
           "secret": null,
           "blob": false
         }
