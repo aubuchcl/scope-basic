@@ -9,9 +9,10 @@
         }
       },
       "access": {
-        "env_variable": true,
-        "internal_api": {},
-        "file": {}
+        "env_variable": {
+          "key": "stackone"
+          
+        }
       },
       "source": {
         "type": "raw",
