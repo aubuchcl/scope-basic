@@ -17,7 +17,7 @@
       "source": {
         "type": "raw",
         "details": {
-          "value": "{{variable-value}}",
+          "value": "",
           "secret": null,
           "blob": false
         }
