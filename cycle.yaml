@@ -19,7 +19,6 @@ scoped_variables:
       details:
         value: "RUST_BACKTRACE=1"
         blob: false
-        secret: null
   - identifier: stackone
     scope:
       containers:
