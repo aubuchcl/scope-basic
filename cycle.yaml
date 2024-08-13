@@ -1,4 +1,3 @@
-
 version: '1.0'
 scoped_variables:
   - identifier: mysql-password
@@ -36,4 +35,3 @@ containers:
         - 80:80
       deploy:
         instances: 1
-  
