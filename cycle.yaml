@@ -18,7 +18,6 @@ scoped_variables:
       type: raw
       details:
         value: "RUST_BACKTRACE=1"
-        blob: false
 containers:
   demo:
     stateful: false
