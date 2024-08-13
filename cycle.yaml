@@ -19,9 +19,6 @@ scoped_variables:
       details:
         value: "RUST_BACKTRACE=1"
         blob: false
-        secret: 
-          iv: "3fa85f64-5717-4562-b3fc-2c963f66afa6"
-          hint: "random"
 containers:
   demo:
     stateful: false
