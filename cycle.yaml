@@ -22,19 +22,6 @@ scoped_variables:
         secret: 
           iv: "3fa85f64-5717-4562-b3fc-2c963f66afa6"
           hint: "random"
-  - identifier: stackone
-    scope:
-      containers:
-        global: true
-    access:
-      env_variable:
-        key: stackoneupdated
-    source:
-      type: raw
-      details:
-        value: xyz
-        secret: 
-        blob: false
 containers:
   demo:
     stateful: false
