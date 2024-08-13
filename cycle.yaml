@@ -1,0 +1,74 @@
+
+version: '1.0'
+scoped_variables:
+  - identifier: sovnet-full-dot-env
+    scope:
+      containers:
+        global: false
+        ids: null
+        identifiers:
+          - sovnet-full-node
+    access:
+      env_variable: null
+      internal_api: null
+      file:
+        path: /app/.env
+        decode: false
+    source:
+      type: raw
+      details:
+        value: "RUST_BACKTRACE=1"
+        blob: false
+        secret: null
+  - identifier: stackone
+    scope:
+      containers:
+        global: true
+    access:
+      env_variable:
+        key: stackoneupdated
+    source:
+      type: raw
+      details:
+        value: xyz
+        secret: 
+        blob: false
+containers:
+  demo:
+    stateful: false
+    name: demo
+    image:
+      name: simplews
+      origin:
+        type: docker-file
+        details:
+          context_dir: "/"
+          build_file: "/Dockerfile"
+    config:
+      network:
+        public: enable
+        hostname: simplews
+        ports:
+        - 80:80
+      deploy:
+        instances: 1
+  reach:
+    stateful: false
+    name: reach
+    image:
+      name: simplews-external
+      origin:
+        type: docker-file
+        details:
+          repo:
+            url: https://github.com/aubuchcl/build-dir-two.git
+          context_dir: "/"
+          build_file: "/Dockerfile"
+    config:
+      network:
+        public: enable
+        hostname: simplews
+        ports:
+        - 80:80
+      deploy:
+        instances: 1

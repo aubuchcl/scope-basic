@@ -2,7 +2,7 @@
   "version": "1.0",
   "scoped_variables": [
     {
-      "identifier": "stackone",
+      "identifier": "Ctackone",
       "scope": {
         "containers": {
           "global": true
