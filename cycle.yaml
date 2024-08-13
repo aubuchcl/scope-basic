@@ -1,19 +1,5 @@
 
 version: '1.0'
-scoped_variables:
-  - identifier: stackone
-    scope:
-      containers:
-        global: true
-    access:
-      env_variable:
-        key: stackoneupdated
-    source:
-      type: raw
-      details:
-        value: xyz
-        secret: 
-        blob: false
 containers:
   demo:
     stateful: false
