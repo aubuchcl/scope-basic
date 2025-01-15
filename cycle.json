@@ -41,7 +41,7 @@
         "type": "raw",
         "details": {
           "value": "{{json-input}}",
-          "blob": false
+          "blob": true
         }
       }
     },
