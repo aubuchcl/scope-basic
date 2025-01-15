@@ -2,7 +2,7 @@
   "version": "1.0",
   "scoped_variables": [
     {
-      "identifier": "CRYPT",
+      "identifier": "asdf",
       "scope": {
         "containers": {
           "global": true
