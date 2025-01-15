@@ -9,7 +9,9 @@
         }
       },
       "access": {
-        "env_variable": true,
+        "env_variable": {
+          "key": "CRYPT"
+        },
         "internal_api": {},
         "file": {}
       },
