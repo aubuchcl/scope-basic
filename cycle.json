@@ -33,7 +33,9 @@
         }
       },
       "access": {
-        "env_variable": true,
+        "env_variable": {
+          "key": "JSON_INPUT"
+        },
         "internal_api": {},
         "file": {}
       },
@@ -53,7 +55,9 @@
         }
       },
       "access": {
-        "env_variable": true,
+        "env_variable": {
+          "key": "STAACKONE"
+        },
         "internal_api": {},
         "file": {}
       },
