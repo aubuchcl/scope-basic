@@ -80,7 +80,9 @@
         }
       },
       "access": {
-        "env_variable": true,
+        "env_variable": {
+          "key": "urltype"
+        },
         "internal_api": {
           "duration": "15m"
         },
