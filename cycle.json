@@ -12,8 +12,8 @@
         "env_variable": {
           "key": "CRYPT"
         },
-        "internal_api": {},
-        "file": {}
+        "internal_api": null,
+        "file": null
       },
       "source": {
         "type": "raw",
@@ -35,11 +35,12 @@
         }
       },
       "access": {
-        "env_variable": {
-          "key": "JSON_INPUT"
-        },
-        "internal_api": {},
-        "file": {}
+        "env_variable": null,
+        "internal_api": null,
+        "file": {
+          "decode": false,
+          "path": "/opt/file.json"
+        }
       },
       "source": {
         "type": "raw",
@@ -60,8 +61,8 @@
         "env_variable": {
           "key": "STAACKONE"
         },
-        "internal_api": {},
-        "file": {}
+        "internal_api": null,
+        "file": null
       },
       "source": {
         "type": "raw",
