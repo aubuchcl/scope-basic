@@ -2,151 +2,32 @@
   "version": "1.0",
   "scoped_variables": [
     {
-      "identifier": "CRYPT",
+      "identifier": "asdf",
       "scope": {
         "containers": {
-          "global": true
-        }
-      },
-      "access": {
-        "env_variable": true,
-        "internal_api": {},
-        "file": {}
-      },
-      "source": {
-        "type": "raw",
-        "details": {
-          "value": "4a2e78b5403700d9cdfb5510f6361bc4ddb4a4af111e6fe3a5b70a9d9875ba33a82c5b890fe131465a1a3cb38b99b8eb",
-          "secret": {
-            "iv": "u4L2w6Qcm3On3duuA4U+gA==",
-            "hint": "e8e56823f631edf06d98499e1fd8cb5eedf028344d38d7087550ae917bd79fb3"
-          },
-          "blob": false
-        }
-      }
-    },
-    {
-      "identifier": "json",
-      "scope": {
-        "containers": {
-          "global": true
+          "global": true,
+          "ids": [],
+          "identifiers": []
         }
       },
       "access": {
         "env_variable": {
-          "key": "JSON_INPUT"
+          "key": "ASDF"
         },
-        "internal_api": {},
-        "file": {}
+        "internal_api": null,
+        "file": null
       },
       "source": {
         "type": "raw",
         "details": {
           "value": "{{json-input}}",
-          "blob": true
-        }
-      }
-    },
-    {
-      "identifier": "stackone",
-      "scope": {
-        "containers": {
-          "global": true
-        }
-      },
-      "access": {
-        "env_variable": {
-          "key": "STAACKONE"
-        },
-        "internal_api": {},
-        "file": {}
-      },
-      "source": {
-        "type": "raw",
-        "details": {
-          "value": "STACKONEVALUE",
           "secret": null,
-          "blob": false
-        }
-      }
-    },
-    {
-      "identifier": "urltype",
-      "scope": {
-        "containers": {
-          "global": true
-        }
-      },
-      "access": {
-        "env_variable": true,
-        "internal_api": {
-          "duration": "15m"
-        },
-        "file": {
-          "path": "/root/urltype.json",
-          "decode": false
-        }
-      },
-      "source": {
-        "type": "url",
-        "details": {
-          "url": "https://demo.dec.chrisaubuchon.com/config",
-          "headers": { "X-Custom-Test-Header": "SOMEVALUE" },
-          "auth_token_url": "https://demo.dec.chrisaubuchon.com/auth"
+          "blob": true
         }
       }
     }
   ],
 
   "containers": {
-    "demo": {
-      "name": "demo",
-      "image": {
-        "name": "simplews",
-        "origin": {
-          "type": "docker-file",
-          "details": {
-            "context_dir": "/",
-            "build_file": "/Dockerfile"
-          }
-        }
-      },
-      "config": {
-        "network": {
-          "public": "enable",
-          "hostname": "simplews",
-          "ports": ["80:80"]
-        },
-        "deploy": {
-          "instances": 1
-        }
-      }
-    },
-    "reach": {
-      "name": "reach",
-      "image": {
-        "name": "simplews-external",
-        "origin": {
-          "type": "docker-file",
-          "details": {
-            "repo": {
-              "url": "https://github.com/aubuchcl/build-dir-two.git"
-            },
-            "context_dir": "/",
-            "build_file": "/Dockerfile"
-          }
-        }
-      },
-      "config": {
-        "network": {
-          "public": "enable",
-          "hostname": "simplews",
-          "ports": ["80:80"]
-        },
-        "deploy": {
-          "instances": 1
-        }
-      }
-    }
   }
 }
